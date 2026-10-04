@@ -1,0 +1,26 @@
+<div class="top"><div class="wrap">
+  <div class="brand">
+    <h1><b>3.5</b>Character Codex</h1>
+    <div class="charbar">
+      <select id="charSel" aria-label="Character"></select>
+      <button class="btn pri" id="newChar">New character</button>
+      <button class="btn" id="dupChar" title="Make a copy of this character">Copy</button>
+      <button class="btn" id="expChar">Export</button>
+      <label class="btn" for="impFile" style="display:inline-block">Import</label>
+      <input type="file" id="impFile" accept=".json,application/json" hidden>
+      <span id="delWrap"><button class="btn ghost" id="delChar">Delete</button></span>
+      <span class="sync local" id="sync">Loading…</span>
+    </div>
+    <div class="roundchip" title="Combat round. Advancing it counts down spell and condition durations.">
+      <span class="lab">Round</span>
+      <button class="btn sm ghost" id="rPrev" aria-label="Previous round">−</button>
+      <span class="num" id="rNum">0</span>
+      <button class="btn sm pri" id="rNext">Next round</button>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+</div></div>
+<main class="wrap" id="main"></main>
+<div id="tip" hidden></div>
+<div id="toasts" aria-live="polite"></div>
+<div id="modalRoot"></div>
