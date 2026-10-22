@@ -1,0 +1,22 @@
+{
+  "name": "character-codex-35-android",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Android app for the 3.5 Character Codex (Capacitor)",
+  "license": "MIT",
+  "scripts": {
+    "prepare-web": "node ../prepare.mjs",
+    "setup": "node ../prepare.mjs && npx cap add android && npx capacitor-assets generate --android && npx cap sync android",
+    "sync": "node ../prepare.mjs && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}

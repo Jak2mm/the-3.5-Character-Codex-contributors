@@ -1,0 +1,15 @@
+{
+  "name": "character-codex-35-windows",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Windows app for the 3.5 Character Codex (Tauri)",
+  "license": "MIT",
+  "scripts": {
+    "tauri": "tauri",
+    "build": "node ../prepare.mjs && tauri build",
+    "dev": "node ../prepare.mjs && tauri dev"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}
